@@ -6,6 +6,7 @@ import { LinearTextGradient } from "react-native-text-gradient";
 
 import ratio from '../styles/ratio';
 import { Color, FontFamily } from '../styles/Gobalstyle';
+import Silder from '../components/Silder';
 
 
 
@@ -51,7 +52,6 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                         </LinearGradient>
                     </View>
                 </TouchableOpacity>
-
                 {/*  Slider  */}
                 <View >
                     {/* Slider Header */}
@@ -61,66 +61,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 
                     </View>
                     {/* Slider  */}
-                    <ScrollView
-                        style={styles.Slider}
-                        horizontal={true}
-                        showsVerticalScrollIndicator={false}
-                        showsHorizontalScrollIndicator={false}
-                    >
-                        {/* First Card */}
-                        <View>
-                            <LinearGradient
-                                colors={['#000', '#676767']}
-                                start={{ x: 0.0, y: 0.0 }}
-                                end={{ x: 1.0, y: 1.0 }}
-                                locations={[0.0, 0.953]}
-                                style={styles.SliderCard}
-                            >
-                                <Image
-                                    style={styles.AppleImage}
-                                    source={require('../assets/image/HomePage/apple.png')}
-                                />
-                                <Text style={styles.SliderText}>AAPL</Text>
-                                <Text style={styles.SliderPrice}>$ 364.11</Text>
-
-                            </LinearGradient>
-                        </View>
-                        {/* Second Card */}
-                        <View>
-                            <LinearGradient
-                                colors={['#E80B0B', '#DC4F00']}
-                                start={{ x: 0.0, y: 0.0 }}
-                                end={{ x: 1.0, y: 1.0 }}
-                                locations={[0.0, 0.953]}
-                                style={styles.SliderCard}
-                            >
-                                <Image
-                                    style={styles.AppleImage}
-                                    source={require('../assets/image/HomePage/Mc.png')}
-                                />
-                                <Text style={styles.SliderText}>MCD</Text>
-                                <Text style={styles.SliderPrice}>$ 183.52</Text>
-
-                            </LinearGradient>
-                        </View>
-                        {/* Third Card */}
-                        <View>
-                            <LinearGradient
-                                colors={['#0038FF', '#5CE2FF']}
-                                start={{ x: 0.0, y: 0.0 }}
-                                end={{ x: 1.0, y: 1.0 }}
-                                locations={[0.0, 0.953]}
-                                style={styles.SliderCard}
-                            >
-                                <Image
-                                    style={styles.AppleImage}
-                                    source={require('../assets/image/HomePage/facebook.png')}
-                                />
-                                <Text style={styles.SliderText}>FB</Text>
-                                <Text style={styles.SliderPrice}>$233.42.11</Text>
-                            </LinearGradient>
-                        </View>
-                    </ScrollView>
+                    <Silder />
                 </View>
                 <View style={styles.Comments}>
                     {/* CommentsHeader */}
@@ -180,10 +121,6 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                     </View>
 
                 </View>
-
-
-
-
             </ScrollView>
         </View>
     )
@@ -375,6 +312,8 @@ const styles = StyleSheet.create({
         height: ratio.heightPixel(1),
         backgroundColor: "#4A4A4A",
     }
+
+
 
 })
 

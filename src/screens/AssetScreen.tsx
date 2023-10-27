@@ -4,12 +4,14 @@ import React from 'react'
 import { Color, FontFamily } from '../styles/Gobalstyle';
 import ratio from '../styles/ratio';
 import LinearGradient from 'react-native-linear-gradient';
+import MyAsset from '../components/MyAsset';
+import History from '../components/History';
 
 interface AssetScreenProps {
   navigation: any
 }
 
-const AssetScreen: React.FC<AssetScreenProps>= ({navigation}) => {
+const AssetScreen: React.FC<AssetScreenProps> = ({ navigation }) => {
   return (
     <View style={styles.ScreenContainer}>
       <StatusBar backgroundColor={Color.pink} />
@@ -27,14 +29,14 @@ const AssetScreen: React.FC<AssetScreenProps>= ({navigation}) => {
             <View />
             <Text style={styles.Header}>My Asset</Text>
             <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Home');
-          }}>
-            <Image
-              style={styles.Cross}
-              source={require('../assets/image/AssetsPage/Cross.png')}
-            />
-            </TouchableOpacity> 
+              onPress={() => {
+                navigation.navigate('Home');
+              }}>
+              <Image
+                style={styles.Cross}
+                source={require('../assets/image/AssetsPage/Cross.png')}
+              />
+            </TouchableOpacity>
           </View>
           {/* Price */}
           <Text style={styles.PortText}>Your total asset portfolio</Text>
@@ -51,110 +53,17 @@ const AssetScreen: React.FC<AssetScreenProps>= ({navigation}) => {
           {/*  */}
           <Text style={styles.PortfiloText}>My Portfolio</Text>
           <View style={styles.WhiteContainer}>
-            <View>
-              <LinearGradient
-                colors={['#676767', '#000']}
-                start={{ x: 0.0, y: 0.0 }}
-                end={{ x: 1.0, y: 1.0 }}
-                locations={[0.0413, 0.9339]}
-                style={styles.PortfiloContainer}
-              >
-                <View style={styles.IconContainer}>
-                  <Image
-                    style={styles.Icon}
-                    source={require('../assets/image/HomePage/apple.png')}
-                  />
-                  <Text style={styles.IconText}>AAPL</Text>
-                </View>
-                <Text style={styles.PortfiloPrice}>$ 2.020.244</Text>
-              </LinearGradient>
-            </View>
-
-            <View>
-              <LinearGradient
-                colors={['#5CE2FF', '#0038FF']}
-                start={{ x: 0.0, y: 0.0 }}
-                end={{ x: 1.0, y: 1.0 }}
-                locations={[0.0413, 0.9339]}
-                style={styles.PortfiloContainer}
-              >
-                <View style={styles.IconContainer}>
-                  <Image
-                    style={styles.Icon}
-                    source={require('../assets/image/HomePage/facebook.png')}
-                  />
-                  <Text style={styles.IconText}>FB</Text>
-                </View>
-                <Text style={styles.PortfiloPrice}>$ 5.000</Text>
-              </LinearGradient>
-            </View>
-            <View>
-              <LinearGradient
-                colors={['#FF806C', '#FF5C00']}
-                start={{ x: 0.0, y: 0.0 }}
-                end={{ x: 1.0, y: 1.0 }}
-                locations={[0.0413, 0.9339]}
-                style={styles.PortfiloContainer}
-              >
-                <View style={styles.IconContainer}>
-                  <Image
-                    style={styles.NikeIcon}
-                    source={require('../assets/image/AssetsPage/Nike.png')}
-                  />
-                  <Text style={styles.IconText}>NKE</Text>
-                </View>
-                <Text style={styles.PortfiloPrice}>$ 294.244.000</Text>
-              </LinearGradient>
-            </View>
+            <MyAsset />
             <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Browse');
-          }}>
-             <Text style={styles.AssetText}>See All Assets →</Text>
-          </TouchableOpacity>
-           
+              onPress={() => {
+                navigation.navigate('Browse');
+              }}>
+              <Text style={styles.AssetText}>See All Assets →</Text>
+            </TouchableOpacity>
+
           </View>
           <Text style={styles.HistoryText}>History</Text>
-          <View>
-            <Text style={styles.Rp}>Rp 200.000</Text>
-            <View style={styles.HistoryContainer}>
-              <Text style={styles.Text}>Buy “APPL” Stock</Text>
-              <Text style={styles.Text}>TUE 22 Jun 2020</Text>
-            </View>
-            <View style={styles.WhiteContainer}>
-              <View style={styles.Line} />
-            </View>
-          </View>
-          <View>
-            <Text style={styles.Rp2}>Rp 200.000</Text>
-            <View style={styles.HistoryContainer}>
-              <Text style={styles.Text}>Buy “APPL” Stock</Text>
-              <Text style={styles.Text}>TUE 22 Jun 2020</Text>
-            </View>
-            <View style={styles.WhiteContainer}>
-              <View style={styles.Line} />
-            </View>
-          </View>
-          <View>
-            <Text style={styles.Rp}>Rp 200.000</Text>
-            <View style={styles.HistoryContainer}>
-              <Text style={styles.Text}>Buy “APPL” Stock</Text>
-              <Text style={styles.Text}>TUE 22 Jun 2020</Text>
-            </View>
-            <View style={styles.WhiteContainer}>
-              <View style={styles.Line} />
-            </View>
-          </View>
-          <View>
-            <Text style={styles.Rp2}>Rp 200.000</Text>
-            <View style={styles.HistoryContainer}>
-              <Text style={styles.Text}>Buy “APPL” Stock</Text>
-              <Text style={styles.Text}>TUE 22 Jun 2020</Text>
-            </View>
-            <View style={styles.WhiteContainer}>
-              <View style={styles.Line} />
-            </View>
-          </View>
+          <History/>
         </View>
       </ScrollView>
     </View>
@@ -189,7 +98,7 @@ const styles = StyleSheet.create({
     shadowColor: '#000',
     shadowOffset: { width: 0, height: -10 },
     shadowOpacity: 0.8,
-    elevation: 20, 
+    elevation: 20,
     shadowRadius: 32,
   },
   HeaderContainer: {
@@ -344,6 +253,7 @@ const styles = StyleSheet.create({
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },
+
 
 
 
