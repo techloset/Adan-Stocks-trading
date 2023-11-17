@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
   Header: {
     color: Color.white,
     fontSize: ratio.fontPixel(32),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
   },
   Search: {
     width: ratio.widthPixel(24),
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   ApplePrice: {
     color: Color.white,
@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
     fontSize: ratio.fontPixel(18),
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   McCard: {
     width: ratio.widthPixel(200),

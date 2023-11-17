@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
   Header: {
     color: Color.black,
     fontSize: ratio.fontPixel(32),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
   },
   LinearContainer: {
     marginHorizontal: 'auto',
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   AssetsPrice: {
     color: Color.white,
     fontSize: ratio.fontPixel(32),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   ContainerUp: {
     marginLeft: 8,
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
   Up: {
     color: Color.white,
     fontSize: ratio.fontPixel(10.667),
-    fontFamily: FontFamily.SF_Pro_Display_Regular,
+    fontFamily: FontFamily.SF_Regular,
   },
   AssetImage: {
     height: ratio.heightPixel(16),
@@ -220,14 +220,14 @@ const styles = StyleSheet.create({
     fontSize: ratio.fontPixel(22),
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
   },
   SliderSellall: {
     color: Color.pink,
     fontSize: ratio.fontPixel(18),
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_Medium,
+    fontFamily: FontFamily.SF_Medium,
   },
   Comments: {
     marginTop: 56,
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
     fontSize: ratio.fontPixel(22),
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
     marginTop: 40,
     marginLeft: 30,
     marginBottom: 10,
@@ -257,14 +257,14 @@ const styles = StyleSheet.create({
   },
   Comment: {
     color: Color.white,
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
     fontSize: ratio.fontPixel(18),
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },
   ShadowComment: {
     color: Color.gary,
-    fontFamily: FontFamily.SF_Pro_Display_Regular,
+    fontFamily: FontFamily.SF_Regular,
     fontSize: ratio.fontPixel(14),
     lineHeight: ratio.fontPixel(22),
     letterSpacing: ratio.fontPixel(0.8),

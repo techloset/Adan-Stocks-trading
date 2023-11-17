@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   Header: {
     color: Color.black,
     fontSize: ratio.fontPixel(22),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
   },
   Cross: {
     width: ratio.widthPixel(32),
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
     color: Color.gary,
     fontSize: ratio.fontPixel(16),
-    fontFamily: FontFamily.SF_Pro_Display_Medium,
+    fontFamily: FontFamily.SF_Medium,
   },
   PriceContainer: {
     marginHorizontal: 30,
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   Price: {
     color: Color.black,
     fontSize: ratio.fontPixel(32),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
     marginRight: 7,
   },
   PercentContainer: {
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
   Percent: {
     color: Color.green,
     fontSize: ratio.fontPixel(10.667),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   Up: {
     width: ratio.widthPixel(16),
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: Color.black,
     fontSize: ratio.fontPixel(22),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     color: Color.pink,
     fontSize: ratio.fontPixel(18),
-    fontFamily: FontFamily.SF_Pro_Display_Medium,
+    fontFamily: FontFamily.SF_Medium,
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },
@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
     color: Color.black,
     marginHorizontal: 30,
     fontSize: ratio.fontPixel(22),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },

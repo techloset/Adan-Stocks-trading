@@ -1,9 +1,9 @@
 export const FontFamily = {
-  SF_Pro_Display_Bold: 'SF-Pro-Display-Bold',
-  SF_Pro_Display_SemiBold: 'SF-Pro-Display-Semibold',
-  SF_Pro_Display_Medium: 'SF-Pro-Display-Medium',
-  SF_Pro_Display_Regular: 'SF-Pro-Display-Regular',
-  SF_Pro_Display_light: 'SF-Pro-Display-Thin',
+  SF_Bold: 'SF-Pro-Display-Bold',
+  SF_SemiBold: 'SF-Pro-Display-Semibold',
+  SF_Medium: 'SF-Pro-Display-Medium',
+  SF_Regular: 'SF-Pro-Display-Regular',
+  SF_light: 'SF-Pro-Display-Thin',
 };
 
 export const Color = {
