@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     color: Color.black,
     marginHorizontal: 30,
     fontSize: ratio.fontPixel(18),
-    fontFamily: FontFamily.SF_Pro_Display_Bold,
+    fontFamily: FontFamily.SF_Bold,
     lineHeight: ratio.fontPixel(28),
     letterSpacing: ratio.fontPixel(0.8),
   },
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   Text: {
     color: Color.gary,
     fontSize: ratio.fontPixel(14),
-    fontFamily: FontFamily.SF_Pro_Display_Medium,
+    fontFamily: FontFamily.SF_Medium,
     lineHeight: ratio.fontPixel(22),
     letterSpacing: ratio.fontPixel(0.8),
   },

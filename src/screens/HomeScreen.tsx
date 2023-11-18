@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginLeft: 30,
     fontSize: ratio.fontPixel(16),
-    fontFamily: 'SF-Pro-Display-Bold',
+    fontFamily: FontFamily.SF_Medium,
   },
   PriceContainer: {
     marginTop: 8,

@@ -66,13 +66,13 @@ const styles = StyleSheet.create({
     color: Color.white,
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   PortfiloPrice: {
     fontSize: ratio.fontPixel(14),
     color: Color.white,
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
 });

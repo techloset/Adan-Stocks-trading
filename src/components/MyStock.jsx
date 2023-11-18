@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
   SliderPrice: {
     color: Color.white,
@@ -72,6 +72,6 @@ const styles = StyleSheet.create({
     fontSize: ratio.fontPixel(18),
     lineHeight: ratio.fontPixel(24),
     letterSpacing: ratio.fontPixel(0.8),
-    fontFamily: FontFamily.SF_Pro_Display_SemiBold,
+    fontFamily: FontFamily.SF_SemiBold,
   },
 });
