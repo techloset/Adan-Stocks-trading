@@ -14,7 +14,7 @@ const MyStock = () => {
       horizontal={true}
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
-      keyExtractor={item => item.id}
+      keyExtractor={item => item?.id}
       renderItem={({item}) => (
         <View>
           <LinearGradient
