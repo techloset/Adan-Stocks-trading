@@ -10,7 +10,7 @@ const MyProtilo = () => {
   return (
     <FlatList
       data={Data}
-      keyExtractor={item => item.id}
+      keyExtractor={item => item?.id}
       renderItem={({item, index}) => (
         <View>
           <LinearGradient
