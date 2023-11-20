@@ -9,7 +9,7 @@ const BuyingHistory = () => {
   return (
     <FlatList
       data={Data}
-      keyExtractor={item => item.id}
+      keyExtractor={item => item?.id}
       renderItem={({item, index}) => (
         <View>
           <Text style={index % 2 == 0 ? styles.Rp2 : styles.Rp}>
